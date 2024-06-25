@@ -1,7 +1,7 @@
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 
 const MyNav = () => (
-  <Navbar expand="lg" className="bg-body-tertiary">
+  <Navbar expand="lg" className="bg-body-danger">
     <Container>
       <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
