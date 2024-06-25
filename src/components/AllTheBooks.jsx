@@ -28,6 +28,9 @@ class AllTheBooks extends Component {
             </Button>
           ))}
         </div>
+        <div className="d-flex justify-content-center">
+          <h2 className="h4">{this.state.currentGenre}</h2>
+        </div>
         <Row className="gy-4 justify-content-center align-items-center">
           {this.state.currentGenre === "Horror" &&
             horrorBooks.map(book => {
@@ -37,7 +40,7 @@ class AllTheBooks extends Component {
                     <Card.Img variant="top" src={book.img} alt={book.title} style={{ height: "437px" }} />
                     <Card.Body className="d-flex flex-column align-items-center justify-content-center gap-2">
                       <div className="d-flex justify-content-center align-items-center gap-2">
-                        <Card.Title className="line-clamp m-0">{book.title}</Card.Title>
+                        <Card.Title className="line-clamp m-0 fs-6">{book.title}</Card.Title>
                         <Badge>{book.price}$</Badge>
                       </div>
                       <Button variant="primary">Buy</Button>
