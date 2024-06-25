@@ -5,7 +5,9 @@ const Welcome = () => (
     <Alert variant="info" className="my-3">
       Check out the new books!
     </Alert>
-    <h2>Welcome to Golden Books!</h2>
+    <div className="d-flex justify-content-center">
+      <h2>Welcome to Golden Books!</h2>
+    </div>
   </Container>
 );
 
