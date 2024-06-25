@@ -15,7 +15,7 @@ class AllTheBooks extends Component {
 
   render() {
     return (
-      <Container className="my-3">
+      <Container className="my-3" data-bs-theme="light">
         <div className="d-flex justify-content-center align-items-center gap-2 mb-3">
           {genres.map(genre => (
             <Button
@@ -32,7 +32,7 @@ class AllTheBooks extends Component {
         <div className="d-flex justify-content-center">
           <h2 className="h4">{this.state.currentGenre}</h2>
         </div>
-        <Row className="gy-4 justify-content-center align-items-center">
+        <Row className="gy-4 align-items-center">
           {this.state.currentGenre === "Horror" &&
             horrorBooks.map(book => {
               return (
