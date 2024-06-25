@@ -43,3 +43,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.card img {
+  object-fit: cover;
+}
