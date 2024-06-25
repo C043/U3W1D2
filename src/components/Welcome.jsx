@@ -3,9 +3,9 @@ import { Alert, Container } from "react-bootstrap";
 const Welcome = () => (
   <Container>
     <Alert variant="info" className="my-3">
-      My Book Shop
+      Check out the new books!
     </Alert>
-    <h2>Welcome to My Book Shop!</h2>
+    <h2>Welcome to Golden Books!</h2>
   </Container>
 );
 
