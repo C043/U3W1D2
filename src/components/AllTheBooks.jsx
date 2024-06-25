@@ -3,9 +3,10 @@ import horrorBooks from "../data/horror.json";
 import historyBooks from "../data/history.json";
 import romanceBooks from "../data/romance.json";
 import scifiBooks from "../data/scifi.json";
+import fantasyBooks from "../data/fantasy.json";
 import { Component } from "react";
 
-const genres = ["Horror", "History", "Romance", "SciFi"];
+const genres = ["Horror", "History", "Romance", "SciFi", "Fantasy"];
 
 class AllTheBooks extends Component {
   state = {
@@ -85,6 +86,23 @@ class AllTheBooks extends Component {
             })}
           {this.state.currentGenre === "Romance" &&
             romanceBooks.map(book => {
+              return (
+                <Col key={book.asin} xs="12" md="6" lg="4" xl="3">
+                  <Card style={{ width: "100%" }}>
+                    <Card.Img variant="top" src={book.img} alt={book.title} style={{ height: "437px" }} />
+                    <Card.Body className="d-flex flex-column align-items-center justify-content-center gap-2">
+                      <div className="d-flex justify-content-center align-items-center gap-2">
+                        <Card.Title className="line-clamp m-0">{book.title}</Card.Title>
+                        <Badge>{book.price}$</Badge>
+                      </div>
+                      <Button variant="primary">Buy</Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              );
+            })}
+          {this.state.currentGenre === "Fantasy" &&
+            fantasyBooks.map(book => {
               return (
                 <Col key={book.asin} xs="12" md="6" lg="4" xl="3">
                   <Card style={{ width: "100%" }}>
