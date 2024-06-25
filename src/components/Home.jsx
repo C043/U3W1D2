@@ -1,10 +1,11 @@
-import { Container } from "react-bootstrap";
 import MyNav from "./MyNav";
 import MyFooter from "./MyFooter";
+import Welcome from "./Welcome";
 
 const Home = () => (
   <>
     <MyNav />
+    <Welcome />
     <MyFooter />
   </>
 );
